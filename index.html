@@ -1,0 +1,53 @@
+<html>
+  <head>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/mobilenet"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/knn-classifier"></script>
+  </head>
+  <style>
+    #my_camera{
+     width: 320px;
+     height: 240px;
+     border: 1px solid black;
+    }
+    .example_b {
+        color: #fff !important;
+        text-transform: uppercase;
+        text-decoration: none;
+        background: #60a3bc;
+        padding: 10px;
+        border-radius: 50px;
+        display: inline-block;
+        border: no10pxne;
+        transition: all 0.4s ease 0s;
+        }
+    .button_cont {
+        padding: 5px;
+    }
+  </style>
+  <body>
+      <h1>Lets Train Our Model</h1>
+    <div id="console"></div>
+    <div>
+        <video autoplay playsinline muted id="my_camera" width="400" height="400"></video>
+    </div>
+    
+
+    <img id="img1" crossorigin="anonymous"></img>
+        <p id="prediction"></p>
+        <h3>
+            For fetching from Pre Trained Data 
+        </h3>
+    <div class="form">
+        <input placeholder="Copy Image URL" type="text" id="image_url">
+        <button id="submit_button">Predict</button>
+    </div>
+
+    <div  class="button_cont" align="left"><a id="animal" class="example_b"  >Add Animal 🏇</a></div>
+    <div  class="button_cont" align="left"><a id="human" class="example_b"  >Add Human⛹</a></div>
+    <div  class="button_cont" align="left"><a id="building" class="example_b"  >Add Building 🏭</a></div>
+    <script src="index.js"></script>
+  </body>
+</html>
+
+    
